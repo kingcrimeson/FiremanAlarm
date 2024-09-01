@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("alarm")
+@CrossOrigin
 public class AlarmController {
     @Autowired
     private AlarmServiceImpl alarmService;

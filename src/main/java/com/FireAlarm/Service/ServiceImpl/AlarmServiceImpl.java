@@ -67,7 +67,7 @@ public class AlarmServiceImpl {
         }catch (Exception e){
             e.printStackTrace();
         }
-        /*
+
         String jsonMessage;
         try {
             jsonMessage = objectMapper.writeValueAsString(alarmMessage);
@@ -76,7 +76,7 @@ public class AlarmServiceImpl {
             e.printStackTrace();
         }
         //downloadImage(alarmMessage.getImage());
-        */
+
         return Result.ok("Get it");
     }
     public Result getMessageDTO(){
