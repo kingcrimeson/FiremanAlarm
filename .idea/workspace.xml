@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="" />
+    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="day3">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fm_nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Constant/TokenConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/FormVerification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/StationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/StationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +34,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -30,31 +48,39 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3" />
         <option name="localRepository" value="D:\repo" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2lHQillhIT6YqzevjV8AMOv7sTx" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/FireAlarm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.12970167" />
-    <property name="project.structure.side.proportion" value="0.247482" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.PoliceBackendStarter.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/try_java/FireAlarmBackend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.FireAlarm.Controller" />
@@ -72,15 +98,26 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PoliceBackendStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="FireAlarmBackend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.FireAlarm.PoliceBackendStarter" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.FireAlarm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.FireAlarm.PoliceBackendStarter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,6 +127,14 @@
         <item itemvalue="Spring Boot.PoliceBackendStarter" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,10 +148,55 @@
       <workItem from="1724855179577" duration="3662000" />
       <workItem from="1724905651921" duration="16942000" />
       <workItem from="1724934776748" duration="3000" />
+      <workItem from="1724992654981" duration="4746000" />
+      <workItem from="1725081048119" duration="5877000" />
+      <workItem from="1725183287401" duration="769000" />
+      <workItem from="1725190644358" duration="770000" />
+      <workItem from="1725250489397" duration="2536000" />
+      <workItem from="1725261923101" duration="153000" />
+      <workItem from="1725262082680" duration="3728000" />
     </task>
+    <task id="LOCAL-00001" summary="day2">
+      <created>1725081806227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725081806227</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day2">
+      <created>1725081870890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725081870890</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day3">
+      <created>1725183454681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725183454681</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day2" />
+    <MESSAGE value="day3" />
+    <option name="LAST_COMMIT_MESSAGE" value="day3" />
   </component>
 </project>

@@ -80,7 +80,7 @@ public class AlarmServiceImpl {
         return Result.ok("Get it");
     }
     public Result getMessageDTO(){
-        LambdaQueryWrapper<Message> queryWrapper = new LambdaQueryWrapper<>();
+        LambdaQueryWrapper<Message> queryWrapper = new LambdaQueryWrapper<Message>().orderByDesc(Message::getCreateTime);
         List<Message>messages = messageMapper.selectList(queryWrapper);
         List<MessageDTO>messageDTOS = messages.stream().map(message -> {
             MessageDTO messageDTO = new MessageDTO();

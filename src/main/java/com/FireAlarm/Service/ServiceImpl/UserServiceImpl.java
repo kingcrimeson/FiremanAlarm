@@ -67,9 +67,15 @@ public class UserServiceImpl implements UserService {
     }
 
     public Result regist(User user) {
+
+
         LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+
+
+
         queryWrapper.eq(User::getUsername,user.getUsername());
         User hasUser = userMapper.selectOne(queryWrapper);
+
         if(hasUser!=null){
             return Result.build(null,ResultCodeEnum.USERNAME_USED);
         }

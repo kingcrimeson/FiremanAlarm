@@ -18,6 +18,8 @@ public class AlarmController {
 
         return alarmService.RingOut(alarmMessage);
     }
+
+
     @GetMapping("getAllAlarm")
     public Result GetAllAlarm(){
         return alarmService.getMessageDTO();
