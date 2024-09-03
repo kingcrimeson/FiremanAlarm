@@ -5,20 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="day3">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fm_nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Constant/TokenConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/FormVerification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/StationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/StationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/MessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/MessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/FormVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/FormVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/StationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/StationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/ResultCodeEnum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +44,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kingcrimeson&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -45,6 +58,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:kingcrimeson/FiremanAlarm.git",
+    "accountId": "b90decbb-54cc-4e40-8895-2370862e40d4"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -72,12 +91,13 @@
     "Spring Boot.PoliceBackendStarter.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/try_java/FireAlarmBackend",
+    "last_opened_file_path": "D:/try_java/sb_java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -154,7 +174,8 @@
       <workItem from="1725190644358" duration="770000" />
       <workItem from="1725250489397" duration="2536000" />
       <workItem from="1725261923101" duration="153000" />
-      <workItem from="1725262082680" duration="3728000" />
+      <workItem from="1725262082680" duration="7451000" />
+      <workItem from="1725328664350" duration="10064000" />
     </task>
     <task id="LOCAL-00001" summary="day2">
       <created>1725081806227</created>
@@ -177,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725183454681</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="day3">
+      <option name="closed" value="true" />
+      <created>1725275699422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725275699422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,5 +227,9 @@
     <MESSAGE value="day2" />
     <MESSAGE value="day3" />
     <option name="LAST_COMMIT_MESSAGE" value="day3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -27,3 +27,8 @@ jwt:
     tokenExpiration: 120 #有效时间,单位分钟
     tokenSignKey: headline123456
 
+
+
+formverification:
+  USER_IDCARD_LENGTH: 20
+  USER_PASSWORD_LENGTH: 6

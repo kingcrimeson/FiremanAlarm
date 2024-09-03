@@ -3,10 +3,7 @@ package com.FireAlarm.Service.ServiceImpl;
 import com.FireAlarm.Mapper.UserMapper;
 import com.FireAlarm.Service.UserService;
 import com.FireAlarm.pojo.User;
-import com.FireAlarm.utils.JwtHelper;
-import com.FireAlarm.utils.MD5Util;
-import com.FireAlarm.utils.Result;
-import com.FireAlarm.utils.ResultCodeEnum;
+import com.FireAlarm.utils.*;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.mysql.cj.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +19,9 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
     @Autowired
     private JwtHelper jwtHelper;
+
+    @Autowired
+    private FormVerification formVerification;
 
     @Override
     public Result login(User user) {
@@ -68,14 +68,12 @@ public class UserServiceImpl implements UserService {
 
     public Result regist(User user) {
 
-
+        if(!formVerification.UserVerification(user)){
+            return Result.build(null,ResultCodeEnum.REGISERERROR);
+        }
         LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
-
-
-
         queryWrapper.eq(User::getUsername,user.getUsername());
         User hasUser = userMapper.selectOne(queryWrapper);
-
         if(hasUser!=null){
             return Result.build(null,ResultCodeEnum.USERNAME_USED);
         }

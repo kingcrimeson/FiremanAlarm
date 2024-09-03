@@ -3,8 +3,10 @@ package com.FireAlarm.pojo;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.Version;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -29,7 +31,10 @@ public class Message {
     private String image;
     private String video;
     private String otherContent;
-    private String createTime;
+
+    private Integer isAccepted;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createTime;
     @Version
     private Integer version;
 

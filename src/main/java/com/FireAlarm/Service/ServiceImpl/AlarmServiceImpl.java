@@ -46,7 +46,7 @@ public class AlarmServiceImpl {
             BeanUtils.copyProperties(alarmMessage,message);
             System.out.println("message = " + message);
             LocalDateTime createTime = LocalDateTime.now();
-            message.setCreateTime(createTime.toString());
+            message.setCreateTime(createTime);
             messageMapper.insert(message);
             if(alarmMessage.getFireConditions().size()!=0){
                 LambdaQueryWrapper<Firecondition> queryWrapper = new LambdaQueryWrapper<>();

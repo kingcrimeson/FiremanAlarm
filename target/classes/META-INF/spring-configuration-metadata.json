@@ -1,6 +1,11 @@
 {
   "groups": [
     {
+      "name": "formverification",
+      "type": "com.FireAlarm.utils.FormVerification",
+      "sourceType": "com.FireAlarm.utils.FormVerification"
+    },
+    {
       "name": "jwt.token",
       "type": "com.FireAlarm.utils.JwtHelper",
       "sourceType": "com.FireAlarm.utils.JwtHelper"

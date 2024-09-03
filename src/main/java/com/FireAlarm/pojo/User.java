@@ -14,7 +14,7 @@ public class User {
     private String username;
     private String userPwd;
     private String idCard;
-
+    private Integer role;
 
     @Version
     private Integer version;

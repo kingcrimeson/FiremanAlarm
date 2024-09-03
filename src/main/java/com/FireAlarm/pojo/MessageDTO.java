@@ -3,8 +3,10 @@ package com.FireAlarm.pojo;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.Version;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -26,7 +28,11 @@ public class MessageDTO {
     private String rescueSituation;
     private String trappedPeoplecount;
     private String phoneNumber;
-    private String createTime;
+
+
+    private Integer isAccepted;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createTime;
     private String image;
     private String video;
     private String otherContent;

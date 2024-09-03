@@ -12,8 +12,8 @@ public enum ResultCodeEnum {
     NOTLOGIN(504,"notLogin"),
     USERNAME_USED(505,"userNameUsed"),
     PORTALUNFIND(506,"portalUnFind"),
-    HEADLINENOTFOUND(507,"headlineNotFind");
-
+    HEADLINENOTFOUND(507,"headlineNotFind"),
+    REGISERERROR(508,"registerFailed");
     private Integer code;
     private String message;
     private ResultCodeEnum(Integer code, String message) {
