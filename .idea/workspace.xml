@@ -4,28 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="day3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/StationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/StationService.java" afterDir="false" />
+    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="day4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/MessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/MessageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/FormVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/FormVerification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/StationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/HandlerIntercepter/LoginProtectInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/HandlerIntercepter/LoginProtectInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/PoliceBackendStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/PoliceBackendStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/StationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/StationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/StationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/StationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/HandlerIntercepter/LoginProtectInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/HandlerIntercepter/LoginProtectInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/PoliceBackendStarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/PoliceBackendStarter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/ResultCodeEnum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +53,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:kingcrimeson/FiremanAlarm.git",
-    "accountId": "b90decbb-54cc-4e40-8895-2370862e40d4"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:kingcrimeson/FiremanAlarm.git&quot;,
+    &quot;accountId&quot;: &quot;b90decbb-54cc-4e40-8895-2370862e40d4&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -83,12 +78,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.FireAlarmBackend [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.FireAlarmBackend [org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.PoliceBackendStarter.executor": "Debug",
+    "Spring Boot.PoliceBackendStarter.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/try_java/sb_java",
@@ -175,7 +172,9 @@
       <workItem from="1725250489397" duration="2536000" />
       <workItem from="1725261923101" duration="153000" />
       <workItem from="1725262082680" duration="7451000" />
-      <workItem from="1725328664350" duration="10064000" />
+      <workItem from="1725328664350" duration="12076000" />
+      <workItem from="1725372068077" duration="1782000" />
+      <workItem from="1725415993330" duration="14583000" />
     </task>
     <task id="LOCAL-00001" summary="day2">
       <created>1725081806227</created>
@@ -206,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725275699422</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="day4">
+      <option name="closed" value="true" />
+      <created>1725363395513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725363395513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +233,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day2" />
     <MESSAGE value="day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="day3" />
+    <MESSAGE value="day4" />
+    <option name="LAST_COMMIT_MESSAGE" value="day4" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((Request)((RequestFacade)request).request).partsParseException" custom="org.apache.catalina.connector.RequestFacade,org.apache.catalina.connector.Request" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

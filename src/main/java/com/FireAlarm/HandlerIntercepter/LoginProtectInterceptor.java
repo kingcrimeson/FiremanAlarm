@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
+import java.util.Enumeration;
+
 
 @Component
 public class LoginProtectInterceptor implements HandlerInterceptor {
@@ -20,6 +22,16 @@ public class LoginProtectInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            return true;
+        }
+        Enumeration<String> headerNames = request.getHeaderNames();
+        while (headerNames.hasMoreElements()) {
+            String headerName = headerNames.nextElement();
+            System.out.println(headerName + ": " + request.getHeader(headerName));
+        }
+
+
         String token = request.getHeader("token");
         if(StringUtils.isEmpty(token)||jwtHelper.isExpiration(token)){
             Result result = Result.build(null, ResultCodeEnum.NOTLOGIN);
