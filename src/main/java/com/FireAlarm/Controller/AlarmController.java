@@ -5,6 +5,7 @@ import com.FireAlarm.pojo.MessageDTO;
 import com.FireAlarm.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("alarm")
@@ -23,5 +24,10 @@ public class AlarmController {
     @GetMapping("getAllAlarm")
     public Result GetAllAlarm(){
         return alarmService.getMessageDTO();
+    }
+
+    @PostMapping("uploadVideo")
+    public Result uploadVideo(@RequestParam("video") MultipartFile video,@RequestParam("UUID") String UUID){
+        return alarmService.upLoadVideo(video,UUID);
     }
 }

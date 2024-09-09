@@ -1,15 +1,17 @@
 server:
-  port: 8081
+  port: ${fireman.server.port}
   servlet:
     context-path: /
 
 spring:
+  profiles:
+    active: dev
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       url: jdbc:mysql:///firealarm
-      username: root
-      password: '#Include123'
+      username: ${fireman.database.username}
+      password: ${fireman.database.password}
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis-plus:
@@ -25,10 +27,15 @@ mybatis-plus:
 jwt:
   token:
     tokenExpiration: 120 #有效时间,单位分钟
-    tokenSignKey: headline123456
+    tokenSignKey: fireman123456
 
 
 
 formverification:
   USER_IDCARD_LENGTH: 20
   USER_PASSWORD_LENGTH: 6
+
+
+cors:
+  IP: ${cors.IP}
+  ADDRESS: ${cors.ADDRESS}

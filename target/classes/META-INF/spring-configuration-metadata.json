@@ -1,6 +1,11 @@
 {
   "groups": [
     {
+      "name": "cors",
+      "type": "com.FireAlarm.Config.WebMvcConfig",
+      "sourceType": "com.FireAlarm.Config.WebMvcConfig"
+    },
+    {
       "name": "formverification",
       "type": "com.FireAlarm.utils.FormVerification",
       "sourceType": "com.FireAlarm.utils.FormVerification"
@@ -13,9 +18,25 @@
   ],
   "properties": [
     {
+      "name": "cors.i-p",
+      "type": "java.lang.String",
+      "sourceType": "com.FireAlarm.Config.WebMvcConfig"
+    },
+    {
+      "name": "cors.login-protect-interceptor",
+      "type": "com.FireAlarm.HandlerIntercepter.LoginProtectInterceptor",
+      "sourceType": "com.FireAlarm.Config.WebMvcConfig"
+    },
+    {
+      "name": "cors.p-o-r-t",
+      "type": "java.lang.String",
+      "sourceType": "com.FireAlarm.Config.WebMvcConfig"
+    },
+    {
       "name": "jwt.token.token-expiration",
       "type": "java.lang.Long",
-      "sourceType": "com.FireAlarm.utils.JwtHelper"
+      "sourceType": "com.FireAlarm.utils.JwtHelper",
+      "defaultValue": 0
     },
     {
       "name": "jwt.token.token-sign-key",

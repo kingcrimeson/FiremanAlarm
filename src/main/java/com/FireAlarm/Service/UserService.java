@@ -10,4 +10,5 @@ public interface UserService {
     public Result getMessage(String token);
     Result checkUserName(String username);
     Result regist(User user);
+
 }

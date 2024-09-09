@@ -1,0 +1,11 @@
+fireman:
+  server:
+    port: 8081
+
+  database:
+    username: root
+    password: '#Include123'
+
+cors:
+  IP: 127.0.0.1
+  ADDRESS: 8088

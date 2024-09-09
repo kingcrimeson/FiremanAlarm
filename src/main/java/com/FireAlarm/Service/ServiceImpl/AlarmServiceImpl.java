@@ -16,6 +16,7 @@ import jakarta.annotation.Resource;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -38,6 +39,7 @@ public class AlarmServiceImpl {
 
     @Resource
     private MyWebSocketHandler myWebSocketHandler;
+
 
     public Result RingOut(MessageDTO alarmMessage){
         Message message = new Message();
@@ -93,5 +95,8 @@ public class AlarmServiceImpl {
         }
 
         return Result.ok(messageDTOS);
+    }
+    public Result upLoadVideo(MultipartFile video, String UUID){
+        return Result.ok(null);
     }
 }
