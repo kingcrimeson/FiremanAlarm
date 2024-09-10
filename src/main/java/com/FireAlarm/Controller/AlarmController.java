@@ -30,4 +30,8 @@ public class AlarmController {
     public Result uploadVideo(@RequestParam("video") MultipartFile video,@RequestParam("UUID") String UUID){
         return alarmService.upLoadVideo(video,UUID);
     }
+    @PostMapping("uploadPic")
+    public Result uploadPic(@RequestParam("picture") MultipartFile pic,@RequestParam("UUID") String UUID){
+        return alarmService.upLoadPic(pic,UUID);
+    }
 }

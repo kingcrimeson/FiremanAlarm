@@ -9,3 +9,10 @@ fireman:
 cors:
   IP: 127.0.0.1
   ADDRESS: 8088
+
+
+
+firealarm:
+  filepath:
+    VIDEO_FILE_PATH: 'D:\try_java\FireAlarmBackend\src\main\resources\video'  # 相对路径
+    PIC_FILE_PATH: 'D:\try_java\FireAlarmBackend\src\main\resources\image'

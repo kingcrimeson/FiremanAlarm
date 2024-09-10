@@ -33,8 +33,8 @@ public class MessageDTO {
     private Integer isAccepted;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
-    private String imageUUID;
-    private String videoUUID;
+    private String imageUuid;
+    private String videoUuid;
     private String otherContent;
 
     @Version

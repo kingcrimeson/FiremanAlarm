@@ -7,4 +7,5 @@ import org.springframework.web.multipart.MultipartFile;
 public interface AlarmService {
     public Result ringout(MessageDTO alarmessage);
     Result upLoadVideo(MultipartFile video, String UUID);
+    Result upLoadPic(MultipartFile pic, String UUID);
 }

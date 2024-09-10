@@ -28,8 +28,8 @@ public class Message {
     private String rescueSituation;
     private String trappedPeoplecount;
     private String phoneNumber;
-    private String imageUUID;
-    private String videoUUID;
+    private String imageUuid;
+    private String videoUuid;
     private String otherContent;
 
     private Integer isAccepted;

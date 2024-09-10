@@ -1,9 +1,19 @@
 {
   "groups": [
     {
+      "name": "",
+      "type": "com.FireAlarm.properties.OssProperties",
+      "sourceType": "com.FireAlarm.properties.OssProperties"
+    },
+    {
       "name": "cors",
       "type": "com.FireAlarm.Config.WebMvcConfig",
       "sourceType": "com.FireAlarm.Config.WebMvcConfig"
+    },
+    {
+      "name": "firealarm.filepath",
+      "type": "com.FireAlarm.Constant.FilePath",
+      "sourceType": "com.FireAlarm.Constant.FilePath"
     },
     {
       "name": "formverification",
@@ -33,10 +43,19 @@
       "sourceType": "com.FireAlarm.Config.WebMvcConfig"
     },
     {
+      "name": "firealarm.filepath.pic-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.FireAlarm.Constant.FilePath"
+    },
+    {
+      "name": "firealarm.filepath.video-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.FireAlarm.Constant.FilePath"
+    },
+    {
       "name": "jwt.token.token-expiration",
       "type": "java.lang.Long",
-      "sourceType": "com.FireAlarm.utils.JwtHelper",
-      "defaultValue": 0
+      "sourceType": "com.FireAlarm.utils.JwtHelper"
     },
     {
       "name": "jwt.token.token-sign-key",

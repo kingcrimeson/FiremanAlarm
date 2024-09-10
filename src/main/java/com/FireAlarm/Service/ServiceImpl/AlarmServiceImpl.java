@@ -2,15 +2,13 @@ package com.FireAlarm.Service.ServiceImpl;
 
 
 import com.FireAlarm.Config.WebSocketConfig.MyWebSocketHandler;
-import com.FireAlarm.Mapper.ContentMapper;
-import com.FireAlarm.Mapper.FireconditionMapper;
-import com.FireAlarm.Mapper.MessageMapper;
-import com.FireAlarm.pojo.Content;
-import com.FireAlarm.pojo.Firecondition;
-import com.FireAlarm.pojo.Message;
-import com.FireAlarm.pojo.MessageDTO;
+import com.FireAlarm.Constant.FilePath;
+import com.FireAlarm.Mapper.*;
+import com.FireAlarm.pojo.*;
+import com.FireAlarm.utils.MD5Util;
 import com.FireAlarm.utils.Result;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.Resource;
 import org.springframework.beans.BeanUtils;
@@ -18,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.security.NoSuchAlgorithmException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -39,6 +39,20 @@ public class AlarmServiceImpl {
 
     @Resource
     private MyWebSocketHandler myWebSocketHandler;
+
+    @Autowired
+    private VideoMapper videoMapper;
+
+    @Autowired
+    private PictureMapper pictureMapper;
+
+
+    @Autowired
+    private MD5Util md5Util;
+
+    @Autowired
+    private FilePath filePath;
+
 
 
     public Result RingOut(MessageDTO alarmMessage){
@@ -97,6 +111,57 @@ public class AlarmServiceImpl {
         return Result.ok(messageDTOS);
     }
     public Result upLoadVideo(MultipartFile video, String UUID){
-        return Result.ok(null);
+        if(video.isEmpty()){
+            return Result.ok("未选择视频");
+        }
+        try{
+            String md5Checksum = md5Util.calculateMD5(video);
+            LambdaQueryWrapper<Video> queryWrapper = new LambdaQueryWrapper<>();
+            queryWrapper.eq(Video::getMD5,md5Checksum);
+            Video t_v = videoMapper.selectOne(queryWrapper);
+            Video n_v = new Video();
+            String des = filePath.getVideoFilePath()+ video.getOriginalFilename();
+            if(t_v==null){
+                video.transferTo(new File(des));
+            }
+            else{
+               des=t_v.getFilePath();
+            }
+            n_v.setFilePath(des);
+            n_v.setMD5(md5Checksum);
+            n_v.setVideoUuid(UUID);
+            videoMapper.insert(n_v);
+            return Result.ok("上传成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Result.ok("上传失败");
+    }
+    public Result upLoadPic(MultipartFile pic, String UUID){
+        if(pic.isEmpty()){
+            return Result.ok("未选择图片");
+        }
+        try{
+            String md5Checksum = md5Util.calculateMD5(pic);
+            LambdaQueryWrapper<Picture> queryWrapper = new LambdaQueryWrapper<>();
+            queryWrapper.eq(Picture::getMD5,md5Checksum);
+            Picture t_p = pictureMapper.selectOne(queryWrapper);
+            Picture n_p = new Picture();
+            String des = filePath.getPicFilePath()+ pic.getOriginalFilename();
+            if(t_p==null){
+                pic.transferTo(new File(des));
+            }
+            else{
+                des=t_p.getFilePath();
+            }
+            n_p.setFilePath(des);
+            n_p.setMD5(md5Checksum);
+            n_p.setImageUuid(UUID);
+            pictureMapper.insert(n_p);
+            return Result.ok("上传成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Result.ok("上传失败");
     }
 }
