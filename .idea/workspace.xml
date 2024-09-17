@@ -4,22 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="add video deal part">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Constant/FilePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Mapper/PictureMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Mapper/VideoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Video.java" afterDir="false" />
+    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="add file upload part">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/CachePreWarm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/CachePreWarmImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/AlarmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/AlarmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/MessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/pojo/MessageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/utils/MD5Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/AlarmService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/AlarmService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/MD5Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,35 +80,38 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.FireAlarmBackend [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.FireAlarmBackend [org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.PoliceBackendStarter.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/try_java/FireAlarmBackend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.FireAlarmBackend [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FireAlarmBackend [org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.PoliceBackendStarter.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/try_java/FireAlarmBackend/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.FireAlarm.Controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\try_java\FireAlarmBackend\src\main\java\com\FireAlarm" />
       <recent name="D:\try_java\FireAlarmBackend\src\main\resources" />
+      <recent name="D:\try_java\FireAlarmBackend\src\main\java\com\FireAlarm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\try_java\FireAlarmBackend\src\main\resources\video" />
@@ -187,7 +193,12 @@
       <workItem from="1725692292698" duration="674000" />
       <workItem from="1725771737570" duration="3629000" />
       <workItem from="1725861432832" duration="17583000" />
-      <workItem from="1725934090796" duration="13368000" />
+      <workItem from="1725934090796" duration="13980000" />
+      <workItem from="1725971819864" duration="1282000" />
+      <workItem from="1726021419498" duration="6572000" />
+      <workItem from="1726465458414" duration="9297000" />
+      <workItem from="1726559023432" duration="3136000" />
+      <workItem from="1726572328322" duration="4746000" />
     </task>
     <task id="LOCAL-00001" summary="day2">
       <created>1725081806227</created>
@@ -250,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725886938153</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add file upload part">
+      <option name="closed" value="true" />
+      <created>1725967228124</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725967228124</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +293,8 @@
     <MESSAGE value="add accept" />
     <MESSAGE value="add jar" />
     <MESSAGE value="add video deal part" />
-    <option name="LAST_COMMIT_MESSAGE" value="add video deal part" />
+    <MESSAGE value="add file upload part" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file upload part" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

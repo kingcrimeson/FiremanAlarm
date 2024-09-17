@@ -18,6 +18,12 @@ spring:
       password: ${fireman.database.password}
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
+      password: ${redis.password}
+
 mybatis-plus:
   type-aliases-package: com.FireAlarm.pojo
   global-config:

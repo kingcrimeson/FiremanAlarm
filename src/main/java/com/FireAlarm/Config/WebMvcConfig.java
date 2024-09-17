@@ -16,8 +16,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfig implements WebMvcConfigurer {
 
 
-    private static String IP;
-    private static String PORT;
+    private String IP;
+    private String PORT;
 
     @Autowired
     private LoginProtectInterceptor loginProtectInterceptor;

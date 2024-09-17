@@ -7,7 +7,7 @@ fireman:
     password: '#Include123'
 
 cors:
-  IP: 127.0.0.1
+  IP: 49.232.140.247
   PORT: 8088
 
 redis:
@@ -16,7 +16,8 @@ redis:
   password: 123456
 
 
+
 firealarm:
   filepath:
-    VIDEO_FILE_PATH: 'D:\try_java\FireAlarmBackend\src\main\resources\video'  # 相对路径
-    PIC_FILE_PATH: 'D:\try_java\FireAlarmBackend\src\main\resources\image'
+    VIDEO_FILE_PATH: '/var/FireAlarmBackend/resources/video'
+    PIC_FILE_PATH: '/var/FireAlarmBackend/resources/image'

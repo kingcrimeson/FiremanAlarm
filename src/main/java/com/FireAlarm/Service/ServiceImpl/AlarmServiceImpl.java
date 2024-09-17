@@ -118,6 +118,7 @@ public class AlarmServiceImpl {
             String md5Checksum = md5Util.calculateMD5(video);
             LambdaQueryWrapper<Video> queryWrapper = new LambdaQueryWrapper<>();
             queryWrapper.eq(Video::getMD5,md5Checksum);
+            queryWrapper.last("LIMIT 1");
             Video t_v = videoMapper.selectOne(queryWrapper);
             Video n_v = new Video();
             String des = filePath.getVideoFilePath()+ video.getOriginalFilename();
@@ -145,6 +146,7 @@ public class AlarmServiceImpl {
             String md5Checksum = md5Util.calculateMD5(pic);
             LambdaQueryWrapper<Picture> queryWrapper = new LambdaQueryWrapper<>();
             queryWrapper.eq(Picture::getMD5,md5Checksum);
+            queryWrapper.last("LIMIT 1");
             Picture t_p = pictureMapper.selectOne(queryWrapper);
             Picture n_p = new Picture();
             String des = filePath.getPicFilePath()+ pic.getOriginalFilename();
