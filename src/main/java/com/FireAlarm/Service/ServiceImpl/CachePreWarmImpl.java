@@ -31,6 +31,14 @@ public class CachePreWarmImpl implements CachePreWarm {
     @Autowired
     private RedisTemplate redisTemplate;
 
+
+    public String getPicKey(){
+        return PIC_KEY;
+    }
+
+    public String getVideoKey(){
+        return VIDEO_KEY;
+    }
     @PostConstruct
     public void preWarm() {
         List<Picture> pictures = pictureMapper.selectList(null);

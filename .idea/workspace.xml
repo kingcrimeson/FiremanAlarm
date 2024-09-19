@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="add file upload part">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/RedisConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/CachePreWarm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/CachePreWarmImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yaml" afterDir="false" />
+    <list default="true" id="ecf21ac7-7ddd-47ba-97cb-6e02bedfa61f" name="Default Changelist" comment="add redis part">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/RabbitMQConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/CachePreWarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/CachePreWarm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/CachePreWarmImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/CachePreWarmImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Config/WebMvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Controller/AlarmController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/AlarmService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/AlarmService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/pojo/MessageDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/FireAlarm/utils/MD5Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +192,11 @@
       <workItem from="1726021419498" duration="6572000" />
       <workItem from="1726465458414" duration="9297000" />
       <workItem from="1726559023432" duration="3136000" />
-      <workItem from="1726572328322" duration="4746000" />
+      <workItem from="1726572328322" duration="4948000" />
+      <workItem from="1726628714112" duration="709000" />
+      <workItem from="1726641280905" duration="11149000" />
+      <workItem from="1726713681615" duration="2540000" />
+      <workItem from="1726728913853" duration="4299000" />
     </task>
     <task id="LOCAL-00001" summary="day2">
       <created>1725081806227</created>
@@ -269,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725967228124</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add redis part">
+      <option name="closed" value="true" />
+      <created>1726578079985</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726578079985</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,9 +300,34 @@
     <MESSAGE value="add jar" />
     <MESSAGE value="add video deal part" />
     <MESSAGE value="add file upload part" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file upload part" />
+    <MESSAGE value="add redis part" />
+    <option name="LAST_COMMIT_MESSAGE" value="add redis part" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/FireAlarm/Service/ServiceImpl/AlarmServiceImpl.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/FireAlarm/Controller/AlarmController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="((Request)((RequestFacade)request).request).partsParseException" custom="org.apache.catalina.connector.RequestFacade,org.apache.catalina.connector.Request" />

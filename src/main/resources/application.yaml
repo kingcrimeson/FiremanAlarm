@@ -17,6 +17,13 @@ spring:
       username: ${fireman.database.username}
       password: ${fireman.database.password}
       driver-class-name: com.mysql.cj.jdbc.Driver
+  rabbitmq:
+    host: ${rabbitmq.host}
+    port: ${rabbitmq.port}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}
+    virtual-host: /
+
 
   data:
     redis:

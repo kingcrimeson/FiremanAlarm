@@ -16,6 +16,16 @@ redis:
   password: 123456
 
 
+rabbitmq:
+  host:  192.168.186.128
+  port: 5672
+  username: user
+  password: 123456
+
+
+
+
+
 firealarm:
   filepath:
     VIDEO_FILE_PATH: 'D:\try_java\FireAlarmBackend\src\main\resources\video'  # 相对路径
